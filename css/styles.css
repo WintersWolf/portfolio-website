@@ -1,15 +1,16 @@
 .environment {  
   display: grid;
-grid-template-columns: 0.1fr 0.5fr 2.4fr;
-grid-template-rows: repeat(3, 0.1fr) 3fr 0.1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-template-columns: 0.1fr 0.5fr 2.4fr;
+  grid-template-rows: repeat(3, 0.1fr) 3fr 0.1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .menu{
   grid-area: 1 / 1 / 2 / 6;
   background-color: #2b313c;
   color: white;
+  padding-left: 10px;
 }
 
 .quickPanel { 
@@ -49,11 +50,15 @@ grid-row-gap: 0px;
 html, body , .environment {
   height: 100%;
   margin: 0;
+  font-family: droid-sans-mono,monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.menuLinks li{
+.menu a{
   display:inline;
   text-decoration: none;
+  color: white;
 }
 
 .user {
@@ -62,4 +67,41 @@ html, body , .environment {
   bottom: 30px;
   margin: 5px;
   vertical-align: middle;
+}
+
+.explorerTitle{
+  margin: 19px;
+  font-size: 12px;
+}
+
+.explorerButton {
+  background-color: #23272e;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size: small;
+}
+
+.explorerPanel {
+  padding: 0 18px;
+  background-color: #1e2227;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: small;
+}
+
+.moreIcon {
+  float: right;
+}
+
+.expandIcon {
+  float: left;
 }
