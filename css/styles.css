@@ -55,3 +55,11 @@ html, body , .environment {
   display:inline;
   text-decoration: none;
 }
+
+.user {
+  position: absolute;
+  text-decoration: none;
+  bottom: 30px;
+  margin: 5px;
+  vertical-align: middle;
+}
