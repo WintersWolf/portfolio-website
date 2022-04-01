@@ -1,0 +1,47 @@
+.environment {  
+  display: grid;
+grid-template-columns: 0.1fr 0.5fr 2.4fr;
+grid-template-rows: repeat(3, 0.1fr) 3fr 0.1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.menu{
+  grid-area: 1 / 1 / 2 / 6;
+  background-color: #2b313c;
+}
+
+.quickPanel { 
+  grid-area: 2 / 1 / 5 / 2;
+  background-color: #23272e;
+}
+
+.explorer { 
+  grid-area: 2 / 2 / 5 / 3; 
+  background-color: #1e2227;
+}
+
+.File { 
+  grid-area: 2 / 3 / 3 / 6;
+  background-color: #1e2227;
+}
+
+.line { 
+  grid-area: 3 / 3 / 4 / 6; 
+  background-color: #23272e;
+}
+
+.main { 
+  grid-area: 4 / 3 / 5 / 6;
+  background-color: #23272e;
+}
+
+.footer {
+  grid-area: 5 / 1 / 6 / 6;
+  background: #1e2227;
+}
+
+html, body , .environment {
+  height: 100%;
+  margin: 0;
+}
