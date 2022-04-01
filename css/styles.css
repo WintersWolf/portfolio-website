@@ -9,6 +9,7 @@ grid-row-gap: 0px;
 .menu{
   grid-area: 1 / 1 / 2 / 6;
   background-color: #2b313c;
+  color: white;
 }
 
 .quickPanel { 
@@ -19,21 +20,25 @@ grid-row-gap: 0px;
 .explorer { 
   grid-area: 2 / 2 / 5 / 3; 
   background-color: #1e2227;
+  color: white;
 }
 
-.File { 
+.file { 
   grid-area: 2 / 3 / 3 / 6;
   background-color: #1e2227;
+  color: white;
 }
 
 .line { 
   grid-area: 3 / 3 / 4 / 6; 
   background-color: #23272e;
+  color: white;
 }
 
 .main { 
   grid-area: 4 / 3 / 5 / 6;
   background-color: #23272e;
+  color: white;
 }
 
 .footer {
@@ -44,4 +49,9 @@ grid-row-gap: 0px;
 html, body , .environment {
   height: 100%;
   margin: 0;
+}
+
+.menuLinks li{
+  display:inline;
+  text-decoration: none;
 }
