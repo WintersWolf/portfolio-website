@@ -11,11 +11,22 @@
   background-color: #2b313c;
   color: white;
   padding-left: 10px;
+  font-size: small;
+  padding-top: 5px;
 }
 
 .quickPanel { 
   grid-area: 2 / 1 / 5 / 2;
   background-color: #23272e;
+}
+
+.navigation{
+  padding-top: 10px;
+}
+
+.navigation img{
+  display: block;
+  margin: auto;
 }
 
 .explorer { 
@@ -24,23 +35,56 @@
   color: white;
 }
 
+
 .file { 
   grid-area: 2 / 3 / 3 / 6;
   background-color: #1e2227;
   color: white;
+  font-size: small;
+}
+
+.fileTab{
+  background-color: #23272e;
+  width: 150px;
+  overflow:auto;
+}
+
+.fileTab img{
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(95%);
+  padding-left: 10px;
 }
 
 .line { 
   grid-area: 3 / 3 / 4 / 6; 
   background-color: #23272e;
   color: white;
+  font-size: x-small;
 }
+
+.line img{
+  float: left;
+  position: relative;
+  top: 25%;
+  transform: translateY(8%);
+  padding-left: 10px;
+}
+
 
 .main { 
   grid-area: 4 / 3 / 5 / 6;
   background-color: #23272e;
   color: white;
 }
+
+.file p, .line p, .main p{
+  float: left;
+  padding-left: 10px;
+}
+
+
 
 .footer {
   grid-area: 5 / 1 / 6 / 6;
@@ -70,7 +114,7 @@ html, body , .environment {
 }
 
 .explorerTitle{
-  margin: 19px;
+  margin: 13px;
   font-size: 12px;
 }
 
@@ -98,10 +142,14 @@ html, body , .environment {
   font-size: small;
 }
 
-.moreIcon {
-  float: right;
+.explorerAccordion {
+  text-align: center;
 }
 
-.expandIcon {
-  float: left;
+.explorerAccordion span{
+  vertical-align: middle;
+}
+
+.moreIcon {
+  float: right;
 }
