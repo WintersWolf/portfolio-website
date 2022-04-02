@@ -25,15 +25,15 @@
         </div>
         <div class="quickPanel">
             <div class="navigation">
-                <li><img src="./img/explorer-icon.png"></img></li>
-                <li><img src="./img/search-icon.png"></img></li>
-                <li><img src="./img/source-control-icon.png"></img></li>
-                <li><img src="./img/debug-icon.png"></img></li>
-                <li><img src="./img/extensions-icon.png"></img></li>
+                <li><a href="#"><img src="./img/explorer-icon.png"></img></a></li>
+                <li><a href="#"><img src="./img/search-icon.png"></img></a></li>
+                <li><a href="#"><img src="./img/source-control-icon.png"></img></a></li>
+                <li><a href="#"><img src="./img/debug-icon.png"></img></a></li>
+                <li><a href="#"><img src="./img/extensions-icon.png"></img></a></li>
                 </div>
             <div class="user">
-                <li><img src="./img/accounts-icon.png"></img></li>
-                <li><img src="./img/settings-icon.png"></img></li>
+                <li><a href="#"><img src="./img/accounts-icon.png"></img></a></li>
+                <li><a href="#"><img src="./img/settings-icon.png"></img></a></li>
             </div>
             
         </div>
@@ -41,26 +41,41 @@
             <div class="explorerTitle">EXPLORER
             <img class="moreIcon" src="./img/more-icon.png"></img>
             </div>
-            
+            <div class="accordion">
             <div class="explorerAccordion">
-                
-                <button class="explorerButton"><span class="material-icons" id="demo">
+
+                <button class="explorerButton active"><span class="material-icons" id="accordionIcon">
                         navigate_next</span>PORTFOLIO-WEBSITE</button>
                 <div class="explorerPanel">
-                  <p>awdwad</p>
+                    <div class="explorerPortfolio">
+                        <a onclick="btnclick('./files/index.html')">
+                        <img src="./img/html-icon.png"></img>
+                        <p>index.html </p>
+                        </a>
+                    </div>
+                    <div class="explorerPortfolio">
+                        <a onclick="btnclick('./files/portfolio.html')">
+                        <img src="./img/html-icon.png"></img>
+                        <p>portfolio.html </p>
+                        </a>
+                    </div>
                 </div>
+            </div>
+
+            <div class="bottomAccordion">
                 
-                <button class="explorerButton"><span class="material-icons" id="demo">
+                <button class="explorerButton"><span class="material-icons" id="accordionIcon">
                     navigate_next</span>OUTLINE</button>
                 <div class="explorerPanel">
                   <p></p>
                 </div>
                 
-                <button class="explorerButton"><span class="material-icons" id="demo">
+                <button class="explorerButton"><span class="material-icons" id="accordionIcon">
                     navigate_next</span>TIMELINE</button>
                 <div class="explorerPanel">
                   <p></p>
                 </div> 
+            </div>
             </div>
         </div>
         <div class="file">
@@ -72,10 +87,10 @@
         </div>
         <div class="line">
             <img src="./img/html-icon.png"></img>
-            <p>index.html ></p>
+            <p>index.html > ...</p>
         </div>
-        <div class="main">
-            <p>Welcome to the site.</p>
+        <div class="main" id="main">
+            <?php include ('./files/index.html');?>
         </div>
         <div class="footer">
 
@@ -85,7 +100,8 @@
       
 </body>
 <script src="./js/accordion.js"></script>
+<script src="./js/nav.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
 </html>

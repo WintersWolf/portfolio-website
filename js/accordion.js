@@ -1,6 +1,6 @@
 var acc = document.getElementsByClassName("explorerButton");
 var i;
-var x = document.getElementById("demo");
+var x = document.getElementById("accordionIcon");
 changeIcon();
 
 for (i = 0; i < acc.length; i++) {
